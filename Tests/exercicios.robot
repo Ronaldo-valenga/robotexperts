@@ -30,15 +30,10 @@ Imprimir todas as informações da PESSOA contida no dicionario
 
 Imprimir Lista de FRUTAS
 
-   # FOR    ${ELEMENTO}    IN    @{FRUTAS}
-       # Log To Console      ${ELEMENTO}
-  #  END
+    FOR    ${ELEMENTO}    IN    @{FRUTAS}
+        Log To Console      ${ELEMENTO}
+    END
     
-#Imprimir todas as informações de PESSOA usando for
-
-    #FOR     ${k}    ${j}   IN      &{PESSOA}
-       ## Log To Console      ${k}    ${j}
-   #END
 
     Log To Console      ${FRUTAS[0]}
     Log To Console      ${FRUTAS[1]}
@@ -61,13 +56,6 @@ Cenario: utilizando o for na pratica
     Contar de 0 a 9
 
     Percorrer itens de uma Lista
-
-#Cenario: Exercicio for
-    #[Tags]      exer1
-    ##Contador de 0 a 10
-
-
-
 
 
 
@@ -93,10 +81,6 @@ Percorrer itens de uma Lista
             Log To Console      ${frutas}
     END
 
-#Contador de 0 a 10 
-   # FOR     ${numero}       IN RANGE        0   10
-            #Log To Console      Estou no numero:    ${numero}
-   # END
 
 
 
